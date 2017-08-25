@@ -1,0 +1,113 @@
+body {
+    overflow-x: hidden;
+    color: #333333;
+}
+
+input[placeholder], [placeholder], *[placeholder] {
+    color: #999;
+}
+
+@media screen and (min-width: 320px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 440px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    body {
+        font-size: 24px;
+    }
+}
+
+.promptWhenSubmit {
+    display: none;
+    font-size: 0.24rem;
+    color: red;
+    margin-top: -0.15rem;
+    margin-bottom: 0.15rem;
+}
+
+.my {
+    position: absolute;
+    right: 0.36rem;
+    top: 0.64rem;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+/*loading加载css */
+
+.loading {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #dddddd;
+    border-top-color: #7215a8;
+    border-bottom-color: #14097e;
+    border-left-color: #097e6f;
+    border-right-color: #b4ba1c;
+    -webkit-animation: rotateIn 1s linear infinite both;
+    animation: rotateIn 1s linear infinite both;
+}
+
+/*loading加载css */
+
+@-webkit-keyframes rotateIn {
+    from {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        /*-webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);*/
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotateIn {
+    from {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        /*-webkit-transform: rotate3d(0, 0, 1, -200deg);
+        transform: rotate3d(0, 0, 1, -200deg);*/
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+}

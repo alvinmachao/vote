@@ -1,0 +1,102 @@
+/* 弹层透明遮罩层样式 */
+.m-mask {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(233, 233, 233, .6);
+}
+
+/*	弹层通用样式	*/
+.m-dialog {
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  //width:auto;
+  border: 1px solid #cacacb;
+  box-shadow: 5px 5px 5px #ccc;
+  z-index: 99;
+}
+
+/*	弹层通用头尾样式	*/
+.md-dialog {
+  background-color: #fff;
+  min-width: 3.70rem;
+  &-title {
+    overflow: hidden;
+    height: .62rem;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+    line-height: .62rem;
+    .iconfont {
+      font-size: 20px;
+      float: right;
+      margin-right: .2rem;
+      cursor: pointer;
+    }
+  }
+  &-content {
+    padding: 5px 24px;
+    max-width: 5.40rem;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow-y: auto;
+    .login_container {
+      width: 5.4rem;
+      height: 3.7rem;
+      box-sizing: border-box;
+      padding: .2rem;
+      border-radius: 10px;
+      p {
+        text-align: center;
+      }
+      input {
+        display: block;
+        width: 3.66rem;
+        height: .6rem;
+        margin: 0 auto;
+        margin-bottom: .2rem;
+        box-sizing: border-box;
+        padding: 0 .2rem;
+        border-radius: 5px;
+        border: 2px solid #a0d5ff;
+      }
+      .login_submit {
+        display: block;
+        height: .5rem;
+        line-height: .5rem;
+        text-align: center;
+        width: 1.32rem;
+        font-size: .30rem;
+        color: #fff;
+        background: #50aaeb;
+        margin: 0 auto;
+        border-radius: .5rem;
+        margin-bottom: .2rem;
+        box-shadow: 0 6px 10px lighten(#50aaeb, 20%);
+      }
+      .login_title {
+        text-align: center;
+        margin-bottom: .2rem;
+        font-size: .34rem;
+      }
+      .login_bottom {
+        font-size: .32rem;
+        a {
+          text-decoration: underline;
+          color: #ed937c;
+          font-size: .34rem;
+        }
+      }
+    }
+  }
+}
